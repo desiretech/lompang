@@ -16,4 +16,4 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 ##### WARNING
 
-Do not store anything critical yet. I will be clearing the backend at the end of everyday. Do email me at admin@lompang.com if you find this project interesting.
+Do not store anything critical yet. I will be clearing the backend at the end of everyday. Do email me at admin@lompang.com if you want to buy me coffee. =)
