@@ -5,7 +5,7 @@ This repository contains the API that powers the iOS carpooling app, Lompang. It
 
 
 
-#####WORK IN PROGRESS
+##### WORK IN PROGRESS
 
 
 - This page
@@ -14,6 +14,7 @@ This repository contains the API that powers the iOS carpooling app, Lompang. It
 - Spatial functionalities that sits on top of the messaging layer 
 
 
-######WARNING
+
+##### WARNING
 
 Do not store anything critical yet. Backend messaging layer will be cleared at the end of everyday. Do email me at admin@lompang.com if you find this project interesting. 
