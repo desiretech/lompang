@@ -1,7 +1,7 @@
 Lompang SDK
 ===========
 
-This repository contains the API that powers the iOS carpooling app, Lompang. It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
+This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang) It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
 
 
 
@@ -9,7 +9,7 @@ This repository contains the API that powers the iOS carpooling app, Lompang. It
 
 - This page
 - Instructions on how to deploy this SDK to your iOS codes 
-- GeoSpatial functionalities that sits on top of the messaging layer
+- GeoSpatial functionalities that sit on top of the messaging layer
 - Sample codes / Quick projects
 
 
