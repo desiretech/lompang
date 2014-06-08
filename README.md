@@ -7,11 +7,10 @@ This repository contains the API that powers the iOS carpooling app, Lompang. It
 
 ##### WORK IN PROGRESS
 
-
 - This page
 - Instructions on how to deploy this SDK to your iOS codes 
+- GeoSpatial functionalities that sits on top of the messaging layer
 - Sample codes / Quick projects
-- Spatial functionalities that sits on top of the messaging layer 
 
 
 
