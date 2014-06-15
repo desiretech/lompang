@@ -10,8 +10,9 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 - Link CoreData library to your binary
 - Import Lompang.h in your AppDelegate.h
 - Declare Lompang in your AppDelegate.h
+-- @property (strong, nonatomic) Lompang *lompang;
 - Under applicationDidFinishLaunching, add the following lines
---
+-- self.saas
 
 ##### WORK IN PROGRESS
 
