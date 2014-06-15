@@ -19,6 +19,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
     - [self.lompang connect];
 - Add in the following required delegate methods in AppDelegate.m
     - -(void)socketConnected;
+        - Upon connection, sign in as with as a user
     - -(void)socketDisconnected;
     - -(void)socketSignedOut:(NSDictionary *)dict;
     - -(void)socketSignedIn:(NSDictionary *)dict;
@@ -26,6 +27,9 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
     - -(void)socketRegistered;
     - -(void)socketUnregistered;
     - -(void)socketReceivedDict:(NSDictionary *)dict;
+
+##### METHODS
+-(void)connect;
 
 ##### WORK IN PROGRESS
 
