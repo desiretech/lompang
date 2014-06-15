@@ -29,7 +29,8 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
     - -(void)socketReceivedDict:(NSDictionary *)dict;
 
 ##### METHODS
--(void)connect;
+##### -(void)connect;
+
 
 ##### WORK IN PROGRESS
 
