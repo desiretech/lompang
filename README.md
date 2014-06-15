@@ -4,9 +4,10 @@ Lompang SDK
 This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang) It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
 
 
-##### INSTRUCTIONS
+##### INSTRUCTIONS (Work in progress)
 - Download the 3 files.
 - Add the 3 files to Folder Group, "Frameworks"
+- Change the architecture of app to "armv7"
 - Link CoreData library to your binary
 - Import Lompang.h in your AppDelegate.h
     - #import "Lompang.h"
@@ -28,7 +29,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
     - -(void)socketUnregistered;
     - -(void)socketReceivedDict:(NSDictionary *)dict;
 
-##### METHODS
+##### METHODS (Work in progress)
 ###### -(void)connect;
 - Log onto the backend
 - Once logged on, delegate method, -(void)socketConnected will be called
@@ -36,6 +37,10 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 ###### -(void)disconnect
 - Opposite of connect 
+
+###### -(void)signInAs:(NSString *)user
+- Sign in as a user
+- By signing in as a user, socket automatically joins a group with name same as user
 
 ###### -(void)join:(NSString *)group
 - To add user to a group
@@ -84,16 +89,12 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 - Unregisters the device from iOS push notifications
 - This function is only available on dedicated instances. Please email me for more information.
 
-
-
 ##### WORK IN PROGRESS
 
 - This page
 - Instructions on how to deploy this SDK to your iOS codes 
 - GeoSpatial functionalities that sit on top of the messaging layer
 - Sample codes / Quick projects
-
-
 
 ##### WARNING
 
