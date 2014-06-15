@@ -4,6 +4,14 @@ Lompang SDK
 This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang) It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
 
 
+##### INSTRUCTIONS
+- Download the 3 files.
+- Add the 3 files to Folder Group, "Frameworks"
+- Link CoreData library to your binary
+- Import Lompang.h in your AppDelegate.h
+- Declare Lompang in your AppDelegate.h
+- Under applicationDidFinishLaunching, add the following lines
+--
 
 ##### WORK IN PROGRESS
 
