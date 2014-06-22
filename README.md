@@ -8,7 +8,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 - Download the 3 files.
 - Add the 3 files to Folder Group, "Frameworks"
 - Change the architecture of app to "armv7"
-- Link CoreData library to your binary
+- Link CoreData, CoreLocation and SystemConfiguration libraries to your binary
 - Import Lompang.h in your AppDelegate.h
     - #import "Lompang.h"
     - @class Lompang;
@@ -88,6 +88,17 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 ###### -(void)unregisterApns
 - Unregisters the device from iOS push notifications
 - This function is only available on dedicated instances. Please email me for more information.
+
+###### -(NSString *)encode:(CLLocation *)loc WithPrecision:(int)precision
+- Convert latlng into a quadtree with specified precision
+- Use quadtree generated as a "group"
+
+###### -(CLLocation *)decode:(NSString *)encoded
+- Decode a quadtree into a latlng
+
+###### -(NSString *)neighbor:(NSString *)encoded Index:(int)index
+- Get neighbouring quadtrees
+- Index indicates quadtree in spiraling clockwise fashion
 
 ##### WORK IN PROGRESS
 
