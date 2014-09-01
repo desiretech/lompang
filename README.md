@@ -20,7 +20,7 @@ Lompang SDK
 * Change the architecture of app to armv7
 * Link CoreData and SystemConfiguration libraries to your binary
 
-- Import Lompang.h in your AppDelegate.h
+* Import Lompang.h in your AppDelegate.h
 ```
 #import "Lompang.h"
 ```
@@ -28,19 +28,19 @@ Lompang SDK
 @class Lompang;
 ```
 
-Declare Lompang in your AppDelegate.h
+* Declare Lompang in your AppDelegate.h
 ```
 @property (strong, nonatomic) Lompang *lompang;
 ```
 
-Under applicationDidFinishLaunching, add the following lines
+* Under applicationDidFinishLaunching, add the following lines
 ```
 self.lompang= [[Lompang alloc] init];
 self.lompang.delegate= self;
 [self.lompang connectToAccount:@"<_YOUR-EMAIL_>" WithToken:@"<_YOUR-TOKEN_>"];
 ```
 
-Add in the following required delegate methods in AppDelegate.m
+* Add in the following required delegate methods in AppDelegate.m
 ```
 -(void)socketConnected:(NSDictionary *)dict {
     NSLog(@"@@@ socketConnected: %@", dict);
