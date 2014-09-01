@@ -20,11 +20,9 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
  * Indicate type of certificate, whether it is Sandbox or Production
 * Follow instructions from email and you should receive your token key
 * Please keep your token key. You will need to add it to your codes later
-* Download the 3 files from Git
+* Download the 3 files from Lompang folder
 * Add the 3 files to Folder Group, Frameworks
 * Change the architecture of app to armv7
 * Link CoreData and SystemConfiguration libraries to your binary
 
-#### Work in progress
-* Will do an introduction of the methods provided
-* A compilable sample project
+[Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
