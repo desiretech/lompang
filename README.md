@@ -5,9 +5,9 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 
 #### CONCEPTS
-[Join](http://lompang.com/images/sdkjoin.png)
-[Join](http://lompang.com/images/sdklisten.png)
-[Join](http://lompang.com/images/sdkpost.png)
+![Join](http://lompang.com/images/sdkjoin.png)
+![Join](http://lompang.com/images/sdklisten.png)
+![Join](http://lompang.com/images/sdkpost.png)
 
 #### INSTRUCTIONS
 * Generate APNS certificate from Apple
