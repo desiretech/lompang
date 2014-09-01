@@ -46,6 +46,11 @@ self.lompang.delegate= self;
     [self.lompang registerApns:deviceToken];
 }
 ```
+```
+-(void)socketDisconnected {
+    NSLog(@"@@@ socketDisconnected");
+}
+```
     - -(void)socketDisconnected;
     - -(void)socketSignedOut:(NSDictionary *)dict;
     - -(void)socketSignedIn:(NSDictionary *)dict;
