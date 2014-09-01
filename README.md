@@ -6,7 +6,9 @@ Lompang SDK
 
 #### INSTRUCTIONS
 * Generate APNS certificate from Apple
-* Make sure certificate is <ul><li>.p12 extension</li><li>NOT password protected</li></ul>
+* Make sure certificate is
+ * .p12 extension
+ * NOT password protected
 <p>Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)</p>
     - Key in your email address
     - Upload your .p12 APNS cert that is NOT password protected
