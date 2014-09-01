@@ -7,10 +7,8 @@ Lompang SDK
 <h1>INSTRUCTIONS</h1>
 <p>Generate APNS certificate from Apple</p>
 <p>Make sure certificate is</p>
-    <ul>
-        <li>.p12 extension</li>
-        <li>NOT password protected</li>
-    </ul>
+    <li>.p12 extension</li>
+    <li>NOT password protected</li>
     
     - 
 - Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)
