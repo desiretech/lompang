@@ -31,7 +31,12 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
     - [self.lompang connectToAccount:@"<_YOUR-EMAIL_>" WithToken:@"<_YOUR-TOKEN_>"];
 - Add in the following required delegate methods in AppDelegate.m
     - -(void)socketConnected:(NSDictionary *)dict;
-        - Upon connection, sign in as with as a user
+    - -(void)socketConnected:(NSDictionary *)dict {
+    NSLog(@"@@@ socketConnected: %@", dict);
+...
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
+}
+...
     - -(void)socketDisconnected;
     - -(void)socketSignedOut:(NSDictionary *)dict;
     - -(void)socketSignedIn:(NSDictionary *)dict;
