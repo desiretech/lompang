@@ -51,13 +51,26 @@ self.lompang.delegate= self;
     NSLog(@"@@@ socketDisconnected");
 }
 ```
-    - -(void)socketDisconnected;
-    - -(void)socketSignedOut:(NSDictionary *)dict;
-    - -(void)socketSignedIn:(NSDictionary *)dict;
-    - -(void)socketSignedOut;
-    - -(void)socketRegistered;
-    - -(void)socketUnregistered;
-    - -(void)socketReceivedDict:(NSDictionary *)dict;
+```
+-(void)socketReceivedErr:(NSDictionary *)dict {
+    NSLog(@"@@@ socketReceivedErr: %@", dict);
+}
+```
+```
+-(void)socketRegistered:(NSDictionary *)dict {
+    NSLog(@"@@@ socketRegistered: %@", dict);
+}
+```
+```
+-(void)socketUnregistered {
+    NSLog(@"@@@ socketUnregistered");
+}
+```
+```
+-(void)socketReceivedDict:(NSDictionary *)dict {
+    NSLog(@"@@@ socketReceivedDict: %@", dict);
+}
+```
 
 ##### METHODS (Work in progress)
 ###### -(void)connect;
