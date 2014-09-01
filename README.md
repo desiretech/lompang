@@ -20,4 +20,6 @@ Lompang SDK
 * Change the architecture of app to armv7
 * Link CoreData and SystemConfiguration libraries to your binary
 
-Detailed introduction to the various methods will be added to [Lompang.h](https://github.com/ngzhongcai/lompang/blob/master/Lompang.h)
+#### Work in progress
+* Will do an introduction of the methods provided
+* A compilable sample project
