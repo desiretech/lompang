@@ -26,9 +26,11 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 - Declare Lompang in your AppDelegate.h
     - @property (strong, nonatomic) Lompang *lompang;
 - Under applicationDidFinishLaunching, add the following lines
-    - self.lompang= [[Lompang alloc] init];
-    - self.lompang.delegate= self;
-    - [self.lompang connectToAccount:@"<_YOUR-EMAIL_>" WithToken:@"<_YOUR-TOKEN_>"];
+```
+self.lompang= [[Lompang alloc] init];
+self.lompang.delegate= self;
+[self.lompang connectToAccount:@"<_YOUR-EMAIL_>" WithToken:@"<_YOUR-TOKEN_>"];
+```
 - Add in the following required delegate methods in AppDelegate.m
 - -(void)socketConnected:(NSDictionary *)dict;
 
