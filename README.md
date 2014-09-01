@@ -9,7 +9,7 @@ Lompang SDK
 * Make sure certificate is
  * .p12 extension
  * NOT password protected
-<p>Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)</p>
+* Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)
     - Key in your email address
     - Upload your .p12 APNS cert that is NOT password protected
     - Indicate type of certificate, whether it is Sandbox or Production
