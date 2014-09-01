@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4030248119B4BA15001185AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030248019B4BA15001185AF /* Foundation.framework */; };
+		4030248319B4BA15001185AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030248219B4BA15001185AF /* CoreGraphics.framework */; };
+		4030248519B4BA15001185AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030248419B4BA15001185AF /* UIKit.framework */; };
+		4030248B19B4BA15001185AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4030248919B4BA15001185AF /* InfoPlist.strings */; };
+		4030248D19B4BA15001185AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030248C19B4BA15001185AF /* main.m */; };
+		4030249119B4BA15001185AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030249019B4BA15001185AF /* AppDelegate.m */; };
+		4030249319B4BA15001185AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4030249219B4BA15001185AF /* Images.xcassets */; };
+		403024B619B4BAE3001185AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403024B519B4BAE3001185AF /* SystemConfiguration.framework */; };
+		403024B819B4BAEC001185AF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403024B719B4BAEC001185AF /* CoreData.framework */; };
+		409F4F1C19B4D71D003DDA77 /* libLompang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 409F4F1919B4D71D003DDA77 /* libLompang.a */; };
+		409F4F1D19B4D71D003DDA77 /* lompang.mom in Resources */ = {isa = PBXBuildFile; fileRef = 409F4F1B19B4D71D003DDA77 /* lompang.mom */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4030247D19B4BA15001185AF /* saas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4030248019B4BA15001185AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4030248219B4BA15001185AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4030248419B4BA15001185AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4030248819B4BA15001185AF /* saas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "saas-Info.plist"; sourceTree = "<group>"; };
+		4030248A19B4BA15001185AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4030248C19B4BA15001185AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4030248E19B4BA15001185AF /* saas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "saas-Prefix.pch"; sourceTree = "<group>"; };
+		4030248F19B4BA15001185AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4030249019B4BA15001185AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4030249219B4BA15001185AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		403024B519B4BAE3001185AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		403024B719B4BAEC001185AF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		409F4F1919B4D71D003DDA77 /* libLompang.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLompang.a; path = Lompang/libLompang.a; sourceTree = "<group>"; };
+		409F4F1A19B4D71D003DDA77 /* Lompang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lompang.h; path = Lompang/Lompang.h; sourceTree = "<group>"; };
+		409F4F1B19B4D71D003DDA77 /* lompang.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = lompang.mom; path = Lompang/lompang.mom; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4030247A19B4BA15001185AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409F4F1C19B4D71D003DDA77 /* libLompang.a in Frameworks */,
+				403024B819B4BAEC001185AF /* CoreData.framework in Frameworks */,
+				403024B619B4BAE3001185AF /* SystemConfiguration.framework in Frameworks */,
+				4030248319B4BA15001185AF /* CoreGraphics.framework in Frameworks */,
+				4030248519B4BA15001185AF /* UIKit.framework in Frameworks */,
+				4030248119B4BA15001185AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4030247419B4BA14001185AF = {
+			isa = PBXGroup;
+			children = (
+				4030248619B4BA15001185AF /* saas */,
+				4030247F19B4BA15001185AF /* Frameworks */,
+				4030247E19B4BA15001185AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4030247E19B4BA15001185AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4030247D19B4BA15001185AF /* saas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4030247F19B4BA15001185AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403024AF19B4BA47001185AF /* Lompang */,
+				403024B719B4BAEC001185AF /* CoreData.framework */,
+				403024B519B4BAE3001185AF /* SystemConfiguration.framework */,
+				4030248019B4BA15001185AF /* Foundation.framework */,
+				4030248219B4BA15001185AF /* CoreGraphics.framework */,
+				4030248419B4BA15001185AF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4030248619B4BA15001185AF /* saas */ = {
+			isa = PBXGroup;
+			children = (
+				4030248F19B4BA15001185AF /* AppDelegate.h */,
+				4030249019B4BA15001185AF /* AppDelegate.m */,
+				4030249219B4BA15001185AF /* Images.xcassets */,
+				4030248719B4BA15001185AF /* Supporting Files */,
+			);
+			path = saas;
+			sourceTree = "<group>";
+		};
+		4030248719B4BA15001185AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4030248819B4BA15001185AF /* saas-Info.plist */,
+				4030248919B4BA15001185AF /* InfoPlist.strings */,
+				4030248C19B4BA15001185AF /* main.m */,
+				4030248E19B4BA15001185AF /* saas-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		403024AF19B4BA47001185AF /* Lompang */ = {
+			isa = PBXGroup;
+			children = (
+				409F4F1919B4D71D003DDA77 /* libLompang.a */,
+				409F4F1A19B4D71D003DDA77 /* Lompang.h */,
+				409F4F1B19B4D71D003DDA77 /* lompang.mom */,
+			);
+			name = Lompang;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4030247C19B4BA15001185AF /* saas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 403024A919B4BA15001185AF /* Build configuration list for PBXNativeTarget "saas" */;
+			buildPhases = (
+				4030247919B4BA15001185AF /* Sources */,
+				4030247A19B4BA15001185AF /* Frameworks */,
+				4030247B19B4BA15001185AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = saas;
+			productName = saas;
+			productReference = 4030247D19B4BA15001185AF /* saas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4030247519B4BA14001185AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = lompang;
+			};
+			buildConfigurationList = 4030247819B4BA14001185AF /* Build configuration list for PBXProject "saas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4030247419B4BA14001185AF;
+			productRefGroup = 4030247E19B4BA15001185AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4030247C19B4BA15001185AF /* saas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4030247B19B4BA15001185AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030248B19B4BA15001185AF /* InfoPlist.strings in Resources */,
+				4030249319B4BA15001185AF /* Images.xcassets in Resources */,
+				409F4F1D19B4D71D003DDA77 /* lompang.mom in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4030247919B4BA15001185AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030249119B4BA15001185AF /* AppDelegate.m in Sources */,
+				4030248D19B4BA15001185AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4030248919B4BA15001185AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4030248A19B4BA15001185AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		403024A719B4BA15001185AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		403024A819B4BA15001185AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		403024AA19B4BA15001185AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "saas/saas-Prefix.pch";
+				INFOPLIST_FILE = "saas/saas-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/saas",
+					"$(PROJECT_DIR)/Lompang",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		403024AB19B4BA15001185AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "saas/saas-Prefix.pch";
+				INFOPLIST_FILE = "saas/saas-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/saas",
+					"$(PROJECT_DIR)/Lompang",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4030247819B4BA14001185AF /* Build configuration list for PBXProject "saas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403024A719B4BA15001185AF /* Debug */,
+				403024A819B4BA15001185AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		403024A919B4BA15001185AF /* Build configuration list for PBXNativeTarget "saas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403024AA19B4BA15001185AF /* Debug */,
+				403024AB19B4BA15001185AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4030247519B4BA14001185AF /* Project object */;
+}
