@@ -5,11 +5,11 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 
 ##### INSTRUCTIONS
-- Generate APNS certificate from Apple
-- Make sure certificate is
+1. Generate APNS certificate from Apple
+2. Make sure certificate is
     - .p12 extension
     - NOT password protected
-- Go to lompang.com/sdk.html
+3. Go to lompang.com/sdk.html
     - Key in your email address
     - Upload your .p12 APNS cert that is NOT password protected
     - Indicate type of certificate, whether it is Sandbox or Production
