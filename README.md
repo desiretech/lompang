@@ -6,12 +6,20 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 ##### INSTRUCTIONS (Work in progress)
 - Download APNS certificate from Apple
-- Make sure certificate
-    - - in .p12 extension
-- Download the 3 files.
+- Make sure certificate is
+    - - .p12 extension
+    - - NOT password protected
+- Go to lompang.com/sdk.html
+    - - Key in your email address
+    - - Upload your .p12 APNS cert that is NOT password protected
+    - - Indicate type of certificate, whether it is Sandbox or Production
+    - - Submit
+- Follow instructions from email and you should receive your token key
+- Please keep the email and token key. You will need it when communicating with LompangSDK backend
+- Download the 3 files from Git
 - Add the 3 files to Folder Group, "Frameworks"
 - Change the architecture of app to "armv7"
-- Link CoreData, CoreLocation and SystemConfiguration libraries to your binary
+- Link CoreData and SystemConfiguration libraries to your binary
 - Import Lompang.h in your AppDelegate.h
     - #import "Lompang.h"
     - @class Lompang;
