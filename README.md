@@ -4,8 +4,8 @@ Lompang SDK
 This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang) It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
 
 
-##### INSTRUCTIONS (Work in progress)
-- Download APNS certificate from Apple
+##### INSTRUCTIONS
+- Generate APNS certificate from Apple
 - Make sure certificate is
     - .p12 extension
     - NOT password protected
@@ -30,12 +30,18 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
     - self.lompang.delegate= self;
     - [self.lompang connectToAccount:@"<_YOUR-EMAIL_>" WithToken:@"<_YOUR-TOKEN_>"];
 - Add in the following required delegate methods in AppDelegate.m
-    - -(void)socketConnected:(NSDictionary *)dict;
+- -(void)socketConnected:(NSDictionary *)dict;
 
 ```
 -(void)socketConnected:(NSDictionary *)dict {
     NSLog(@"@@@ socketConnected: %@", dict);
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
+}
+```
+
+```
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [self.lompang registerApns:deviceToken];
 }
 ```
     - -(void)socketDisconnected;
