@@ -4,8 +4,8 @@ Lompang SDK
 <p>This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang) It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.</p>
 
 
-<h1>INSTRUCTIONS</h1>
-<p>1. Generate APNS certificate from Apple</p>
+#### INSTRUCTIONS
+* Generate APNS certificate from Apple
 <p>2. Make sure certificate is <ul><li>.p12 extension</li><li>NOT password protected</li></ul></p>
 <p>Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)</p>
     - Key in your email address
