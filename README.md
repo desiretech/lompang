@@ -5,40 +5,42 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 
 ##### INSTRUCTIONS
-1. Generate APNS certificate from Apple
-2. Make sure certificate is
+Generate APNS certificate from Apple
+Make sure certificate is
     - .p12 extension
     - NOT password protected
-3. Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)
+Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)
     - Key in your email address
     - Upload your .p12 APNS cert that is NOT password protected
     - Indicate type of certificate, whether it is Sandbox or Production
-4. Follow instructions from email and you should receive your token key
-5. Please keep your token key. You will need to add it to your codes later
-6. Download the 3 files from Git
-7. Add the 3 files to Folder Group, "Frameworks"
-8. Change the architecture of app to "armv7"
-9. Link CoreData and SystemConfiguration libraries to your binary
-10. Import Lompang.h in your AppDelegate.h
+Follow instructions from email and you should receive your token key
+Please keep your token key. You will need to add it to your codes later
+Download the 3 files from Git
+Add the 3 files to Folder Group, "Frameworks"
+Change the architecture of app to "armv7"
+Link CoreData and SystemConfiguration libraries to your binary
+
+Import Lompang.h in your AppDelegate.h
 ```
 #import "Lompang.h"
 ```
 ```
 @class Lompang;
 ```
-11. Declare Lompang in your AppDelegate.h
+
+Declare Lompang in your AppDelegate.h
 ```
 @property (strong, nonatomic) Lompang *lompang;
 ```
-11. Under applicationDidFinishLaunching, add the following lines
+
+Under applicationDidFinishLaunching, add the following lines
 ```
 self.lompang= [[Lompang alloc] init];
 self.lompang.delegate= self;
 [self.lompang connectToAccount:@"<_YOUR-EMAIL_>" WithToken:@"<_YOUR-TOKEN_>"];
 ```
-- Add in the following required delegate methods in AppDelegate.m
-- -(void)socketConnected:(NSDictionary *)dict;
 
+Add in the following required delegate methods in AppDelegate.m
 ```
 -(void)socketConnected:(NSDictionary *)dict {
     NSLog(@"@@@ socketConnected: %@", dict);
