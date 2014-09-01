@@ -23,10 +23,14 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 ```
 #import "Lompang.h"
 ```
-    - @class Lompang;
-- Declare Lompang in your AppDelegate.h
-    - @property (strong, nonatomic) Lompang *lompang;
-- Under applicationDidFinishLaunching, add the following lines
+```
+@class Lompang;
+```
+11. Declare Lompang in your AppDelegate.h
+```
+@property (strong, nonatomic) Lompang *lompang;
+```
+11. Under applicationDidFinishLaunching, add the following lines
 ```
 self.lompang= [[Lompang alloc] init];
 self.lompang.delegate= self;
