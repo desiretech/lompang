@@ -19,7 +19,6 @@ Lompang SDK
 * Add the 3 files to Folder Group, Frameworks
 * Change the architecture of app to armv7
 * Link CoreData and SystemConfiguration libraries to your binary
-
 * Import Lompang.h in your AppDelegate.h
 ```
 #import "Lompang.h"
