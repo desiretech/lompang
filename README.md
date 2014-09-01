@@ -16,8 +16,8 @@ Lompang SDK
 * Follow instructions from email and you should receive your token key
 * Please keep your token key. You will need to add it to your codes later
 * Download the 3 files from Git
-* Add the 3 files to Folder Group, "Frameworks"
-* Change the architecture of app to "armv7"
+* Add the 3 files to Folder Group, Frameworks
+* Change the architecture of app to armv7
 * Link CoreData and SystemConfiguration libraries to your binary
 
 - Import Lompang.h in your AppDelegate.h
