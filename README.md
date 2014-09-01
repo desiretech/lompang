@@ -5,6 +5,9 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 
 ##### INSTRUCTIONS (Work in progress)
+- Download APNS certificate from Apple
+- Make sure certificate
+    - - in .p12 extension
 - Download the 3 files.
 - Add the 3 files to Folder Group, "Frameworks"
 - Change the architecture of app to "armv7"
