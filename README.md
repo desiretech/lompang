@@ -7,7 +7,7 @@ Below is a simple scenerio depicting 2 devices connecting and then joining a Gro
 
 ![Join](/Scenarios/1.png)
 
-#### DEFINITIONS
+### DEFINITIONS
 Before venturing further, some basic definitions first need to be established first. 
 
 ###### Groups
