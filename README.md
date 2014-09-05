@@ -10,7 +10,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 Equivalent of Rooms or Channels in standard pubsub terminology. A Group can contain a mixture of Posts and Users. When a User connects to a Group, all Users and Posts residing in the Group will be pushed to User via the socketReceivedDict delegate method.
 
 ###### Users
-Equivalent of Client in standard pubsub terminology. When connected to Lompang backend for the first time, a device will be allocated a unique identifier _user_ that identifies a User by device and app. This unique identifier will stay unchanged across sessions. _group_ refers to the Group from which the User is pushed from. _timestamp_ refers to the Unix timestamp the User was last seen in the Group. _timestamp= 0_ indicates User is currently online.
+Equivalent of Client in standard pubsub terminology. When connected to Lompang backend for the first time, a device will be allocated a unique identifier _user_ that identifies a User by device and app. This unique identifier will stay unchanged across sessions. _group_ refers to the Group from which the User is pushed from. _timestamp_ refers to the Unix timestamp the User was last seen in the Group. _timestamp= 0_ indicates User is currently online. _userload_ is the custom payload a developer attached to the User. To attach a custom payload to a User, use the method _update_.
 
 ```
 @@@ socketReceivedDict: {
