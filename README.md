@@ -12,7 +12,7 @@ Equivalent of Rooms or Channels in standard pubsub terminology. A Group can cont
 ###### Users
 Equivalent of Client in standard pubsub terminology. When connected to Lompang backend for the first time, a device will be allocated a unique identifier that identifies a User by device and app. This unique identifier will stay unchanged across sessions.
 
-'''
+```
 @@@ socketReceivedDict: {
     group = ABC;
     pid = PID;
@@ -24,7 +24,7 @@ Equivalent of Client in standard pubsub terminology. When connected to Lompang b
     type = post;
     user = "45DC9C41-6047-4871-9AF4-357E8E4425A3";
 }
-'''
+```
 
 ###### Posts
 
