@@ -26,7 +26,7 @@ Equivalent of clients in standard pubsub terminology. When connected to Lompang 
 ```
 
 ###### Posts
-A User can post a message to a Group. The Post is then broadcasted to all Users subscribed to the Group either as join or listen. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload a developer attached to the message.
+A User can post a message to a Group. The Post is then broadcasted to all Users who are subscribed to the Group either as join or listen. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload a developer attached to the message.
 
 ```
 @@@ socketReceivedDict: {
