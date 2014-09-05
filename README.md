@@ -45,8 +45,10 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
 #### SCENARIOS
 
 ![Join](/Scenarios/1.png)
-![Join](http://lompang.com/images/sdklisten.png)
-![Join](http://lompang.com/images/sdkpost.png)
+![Join](/Scenarios/2.png)
+![Join](/Scenarios/3.png)
+![Join](/Scenarios/4.png)
+![Join](/Scenarios/5.png)
 
 #### INSTRUCTIONS
 * Generate APNS certificate from Apple
