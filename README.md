@@ -5,7 +5,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 Below is a simple scenerio depicting 2 devices connecting and then joining a Group A. Presence of User A and B are automatically broadcasted everyone in the group. More scenarios illustrated [below](#morescenarios).
 
-![Join](/Scenarios/1.png)
+![](/Scenarios/1.png)
 
 ### DEFINITIONS
 Before venturing further, some basic definitions first need to be established first. 
