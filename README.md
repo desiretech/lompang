@@ -26,7 +26,7 @@ Equivalent of clients in standard pubsub terminology. When connected to Lompang 
 ```
 
 ###### Posts
-A User can post a message to a Group. The Post is then broadcasted to all Users who are subscribed to the Group either as join or listen. _group_ is the Group that User posted the Post to. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload a developer attached to the message. _timestamp_ is the Unix timetamp when User posted the Post. _user_ is the User that posted the Post.  
+A User can post a message to a Group. The Post is then broadcasted to all Users subscribed to the Group as join or listen. _group_ is the Group that User posted the Post to. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload a developer attached to the message. _timestamp_ is the Unix timetamp when User posted the Post. _user_ is the User that posted the Post.  
 
 ```
 @@@ socketReceivedDict: {
