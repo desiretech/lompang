@@ -5,6 +5,13 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 
 #### CONCEPTS
+There are 2 entities within LompangSDK.
+
+Users
+
+Posts
+
+
 ![Join](http://lompang.com/images/sdkjoin.png)
 ![Join](http://lompang.com/images/sdklisten.png)
 ![Join](http://lompang.com/images/sdkpost.png)
