@@ -3,7 +3,7 @@ Lompang SDK
 
 This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang). It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
 
-Below scenerio depicts 2 devices connecting and then joining Group A. Presence of User A and B are automatically broadcasted everyone in the group. More scenarios illustrated [below](#morescenarios).
+<a name="previousscenario"></a> Below scenerio depicts 2 devices connecting and then joining Group A. Presence of User A and B are automatically broadcasted everyone in the group. More scenarios illustrated [below](#morescenarios).
 
 ![Join](/images/1.png)
 
@@ -48,7 +48,7 @@ A User can _post_ a message to a Group via the _post_ method. Below snippet show
 
 ### SCENARIOS <a name="morescenarios"></a>
 
-Below illustrates the _listen_ method. Note that User B is unaware of User A's presence in the group. Compare this with the previous scenario.
+Below illustrates the _listen_ method. Note that User B is unaware of User A's presence in the group. Compare this with the [previous](#previousscenario) scenario.
 ![Listen](/images/2.png)
 
 Disconnect events are also broadcasted to members in the Group. In the below case at Stage 4, User B is somehow disconnected. This change in presence is broadcasted to User A. Note that _timestamp_ of User B has changed from 0 in Stage3 to 1409876031645 in Stage 5. _Timestamp= 0_ indicates User B was online at Stage 3. _Timestamp= 1409876031645_ indicates User B was last seen at Sep5, 2014, 12:13:51am UTC.
