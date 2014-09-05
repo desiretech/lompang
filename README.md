@@ -3,7 +3,7 @@ Lompang SDK
 
 This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang). It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
 
-Below is a simple scenerio depicting 2 devices connecting and then joining a Group A. Presence of User A and B are automatically broadcasted everyone in the group.
+Below is a simple scenerio depicting 2 devices connecting and then joining a Group A. Presence of User A and B are automatically broadcasted everyone in the group. [More scenarios can be found below](#morescenarios)
 
 ![Join](/Scenarios/1.png)
 
@@ -48,7 +48,7 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
 
 #### SCENARIOS
 
-
+<a name="morescenarios"></a>
 ![Join](/Scenarios/2.png)
 ![Join](/Scenarios/3.png)
 ![Join](/Scenarios/4.png)
