@@ -7,10 +7,10 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 #### DEFINITIONS
 
 ###### Groups
-Equivalent of rooms or channels in standard pubsub terminology. A Group can contain a mixture of Posts and Users. Once subscribed to a Group using the join or listen method, a User is pushed Users and Posts packets through the socketReceivedDict delegate method.
+Equivalent of rooms or channels in standard pubsub terminology. A Group can contain a mixture of Posts and Users. Once subscribed to a Group using the _join_ or _listen_ method, a User is pushed Users and Posts packets through the socketReceivedDict delegate method.
 
 ###### Users
-When connected to Lompang backend for the first time, a device is allocated a unique identifier _user_ that identifies a User by device and app. This unique identifier stays unchanged across sessions. Below code snippet shows a sample User package that is sent to the socketReceivedDict delegate method. _group_ refers to the Group from which the User package is pushed from. _timestamp_ refers to the Unix timestamp in milliseconds the User was last seen in the Group. _timestamp= 0_ indicates User is currently online. _userload_ is the custom payload a developer attached to the User.
+When connected to Lompang backend for the first time, a device will be allocated a unique identifier _user_ that identifies a User by device and app. This unique identifier stays unchanged across sessions. Below code snippet shows a sample User package that is sent to the socketReceivedDict delegate method. _group_ refers to the Group from which the User package is pushed from. _timestamp_ refers to the Unix timestamp in milliseconds the User was last seen in the Group. _timestamp= 0_ indicates User is currently online. _userload_ is the custom payload that is attached to the User.
 
 ```
 @@@ socketReceivedDict: {
@@ -26,7 +26,7 @@ When connected to Lompang backend for the first time, a device is allocated a un
 ```
 
 ###### Posts
-A User can post a message to a Group. The Post is then broadcasted to all Users subscribed to the Group as join or listen. _group_ is the Group that User posted the Post to. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload a developer attached to the message. _timestamp_ is the Unix timetamp when User posted the Post. _user_ is the User that posted the Post.  
+A User can post a message to a Group via the _post_ method. Below code snippet shows a sample Post package that is sent to the socketReceivedDict delegate method. _group_ is the Group that User posted the Post to. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload attached to the message. _timestamp_ is the Unix timetamp in milliseconds when User posted the Post. _user_ is the User that posted the Post.  
 
 ```
 @@@ socketReceivedDict: {
@@ -41,9 +41,6 @@ A User can post a message to a Group. The Post is then broadcasted to all Users 
     user = "45DC9C41-6047-4871-9AF4-357E8E4425A3";
 }
 ```
-
-
-
 
 ![Join](http://lompang.com/images/sdkjoin.png)
 ![Join](http://lompang.com/images/sdklisten.png)
