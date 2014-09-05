@@ -65,6 +65,7 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 * Make sure certificate is
  * .p12 extension
  * NOT password protected
+* [Instructions with screenshots here](https://github.com/ngzhongcai/lompang/wiki/Generate-Certificates)
 * Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)
  * Key in your email address
  * Upload your .p12 APNS cert that is NOT password protected
