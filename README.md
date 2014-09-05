@@ -51,7 +51,7 @@ A User can _post_ a message to a Group via the _post_ method. Below snippet show
 Below illustrates the _listen_ method. Note that User B is unaware of User A's presence in the group. Compare this with the [previous](#previousscenario) scenario.
 ![Listen](/images/2.png)
 
-Disconnect events are also broadcasted to Users in the Group. Illustrated below, User B is somehow disconnected at Stage 4. This change in presence is broadcasted to User A. Note that _timestamp_ of User B has changed from 0 in Stage3 to 1409876031645 in Stage 5. _Timestamp= 0_ indicates User B was online at Stage 3. _Timestamp= 1409876031645_ indicates User B was last seen at Sep5, 2014, 12:13:51am UTC.
+Disconnect events are also broadcasted to Users in the Group. Illustrated below, User B is somehow disconnected at Stage 4. This change in presence is broadcasted to User A. Note that _timestamp_ of User B changed from 0 in Stage3 to 1409876031645 in Stage 5. _Timestamp= 0_ indicates User B was online at Stage 3. _Timestamp= 1409876031645_ indicates User B was last seen at Sep5, 2014, 12:13:51am UTC.
 ![Disconnect](/images/3.png)
 
 Method _update_ changes the userload attached to User B. This change is then broadcasted to all Groups that User B has _join_-ed.
