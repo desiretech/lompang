@@ -57,7 +57,7 @@ Disconnect events are also broadcasted to Users in the Group. Illustrated below,
 Method _update_ changes the userload attached to User B. This change is then broadcasted to **all** Groups that User B has _join_-ed.
 ![](/images/4.png)
 
-User A _posts_ a message with custom payload _pidload_ to Group A. Post is then broadcasted to everyone in Group A. Upon receipt, a developer is expected to manually issue out a _unpost_ command to remove the post. Otherwise Post A will continue to be dispatched out to Users entering the Group.
+User A _posts_ a message with custom payload _pidload_ to Group A. Post is then broadcasted to everyone in Group A. Upon receipt, a developer is expected to issue out a _unpost_ command to remove the post. Otherwise Post A will continue to be dispatched out to all Users entering the Group.
 ![](/images/5.png)
 
 #### INSTRUCTIONS
