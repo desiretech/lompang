@@ -30,7 +30,7 @@ When connecting to Lompang SDK for the first time, a device will be allocated a 
 ```
 
 ###### Posts
-A User can post a message to a Group via the _post_ method. Below snippet shows a sample Post package that is sent through the socketReceivedDict delegate method. _group_ is the Group that User posted the Post to. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload attached to the message. _timestamp_ is the Unix timetamp in milliseconds when User posted the Post. _user_ is the User that posted the Post.  
+A User can post a message to a Group via the _post_ method. Below snippet shows a sample Post package that is sent through the socketReceivedDict delegate method. _group_ is the Group that User posted the Post to. _pid_ is the custom identifier that a developer uses to uniquely identify the Post. _pidload_ is the custom payload attached to the message. _timestamp_ is the Unix timetamp in milliseconds when User posted the Post. _user_ is the User that posted the Post.  
 
 ```
 @@@ socketReceivedDict: {
