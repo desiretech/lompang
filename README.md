@@ -57,6 +57,7 @@ Disconnect events are also broadcasted to members in the Group. In the below cas
 Method _update_ changes the userload attached to User B. This change is then broadcasted to all Groups that User B has _join_-ed.
 ![](/Scenarios/4.png)
 
+User A _post_s a message with custom payload _pidload_ to Group A. Post is then broadcasted to all in Group A.
 ![](/Scenarios/5.png)
 
 #### INSTRUCTIONS
