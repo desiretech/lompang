@@ -50,7 +50,10 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
 
 Below illustrates the listen method. Note that User B is unaware of User A's presence in the group. Compare this with the previous scenario.
 ![Listen](/Scenarios/2.png)
-![](/Scenarios/3.png)
+
+Disconnect events are also broadcasted to members in the Group. In the below case, User B is somehow disconnected. This change in presence is broadcasted to User A. Note that _timestamp_ of User B has changed from 0 in Stage3 to 1409876031645 in Stage 5. _Timestamp= 0_ indicates User B was online at Stage 3. _Timestamp= 1409876031645_ indicates User B was last seen at Sep5, 2014, 12:13:51am UTC.
+
+![Disconnect](/Scenarios/3.png)
 ![](/Scenarios/4.png)
 ![](/Scenarios/5.png)
 
