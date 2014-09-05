@@ -19,8 +19,8 @@ When connected to Lompang backend for the first time, a device will be allocated
     type = user;
     user = "7B9194EA-35D4-4BB7-89AE-2FBFD386AA60";
     userload =     {
-        A = A;
-        B = B;
+        a = A;
+        b = B;
     };
 }
 ```
@@ -33,8 +33,8 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
     group = ABC;
     pid = PID;
     pidload =     {
-        A = A;
-        B = B;
+        a = A;
+        b = B;
     };
     timestamp = 1409876031645;
     type = post;
