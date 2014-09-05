@@ -5,11 +5,16 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 
 #### CONCEPTS
-There are 2 entities within LompangSDK.
+
+###### Groups
+Equivalent of 'Room' or 'Channels' in standard pubsub terminology. A 'Group' can contain a mixture of 'Posts' and 'Users'. 
 
 ###### Users
 
 ###### Posts
+
+
+
 
 
 ![Join](http://lompang.com/images/sdkjoin.png)
