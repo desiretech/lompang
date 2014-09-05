@@ -3,12 +3,11 @@ Lompang SDK
 
 This repository contains the API that powers the iOS carpooling app, [Lompang](http://appstore.com/lompang). It's a set of pubsub messaging functionalities which iOS developers can call from their Obj-C codes. Backend is conveniently handled for you.
 
-Below is the simplest scenerio. 
+Below is a simple scenerio. 
 
 ![Join](/Scenarios/1.png)
 
 #### DEFINITIONS
-Below are 3 entities
 
 ###### Groups
 Equivalent of rooms or channels in standard pubsub terminology. A Group can contain a mixture of Posts and Users. Once subscribed to a Group using the _join_ or _listen_ method, a User is pushed Users and Posts packets through the socketReceivedDict delegate method.
