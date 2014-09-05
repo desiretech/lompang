@@ -10,7 +10,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 Equivalent of rooms or channels in standard pubsub terminology. A Group can contain a mixture of Posts and Users. When a User connects to a Group, all Users and Posts residing in the Group will be pushed to User via the socketReceivedDict delegate method.
 
 ###### Users
-Equivalent of clients in standard pubsub terminology. When connected to Lompang backend for the first time, a device will be allocated a unique identifier _user_ that identifies a User by device and app. This unique identifier will stay unchanged across sessions. _group_ refers to the Group from which the User is pushed from. _timestamp_ refers to the Unix timestamp the User was last seen in the Group. _timestamp= 0_ indicates User is currently online. _userload_ is the custom payload a developer attached to the User. A User can listen or join a number of Groups. By default, a User joins Group with its own namesake, i.e., User _7B9194EA-35D4-4BB7-89AE-2FBFD386AA60_ by default joins Group _7B9194EA-35D4-4BB7-89AE-2FBFD386AA60_
+Equivalent of clients in standard pubsub terminology. When connected to Lompang backend for the first time, a device is allocated a unique identifier _user_ that identifies a User by device and app. This unique identifier will stay unchanged across sessions. _group_ refers to the Group from which the User is pushed from. _timestamp_ refers to the Unix timestamp the User was last seen in the Group. _timestamp= 0_ indicates User is currently online. _userload_ is the custom payload a developer attached to the User.
 
 ```
 @@@ socketReceivedDict: {
@@ -26,7 +26,21 @@ Equivalent of clients in standard pubsub terminology. When connected to Lompang 
 ```
 
 ###### Posts
+A User can post a message to a Group. The Post is then broadcasted to all Users subscribed to the Group either as join or listen. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload a developer attached to the message.
 
+```
+@@@ socketReceivedDict: {
+    group = ABC;
+    pid = PID;
+    pidload =     {
+        A = A;
+        B = B;
+    };
+    timestamp = 1409876031645;
+    type = post;
+    user = "45DC9C41-6047-4871-9AF4-357E8E4425A3";
+}
+```
 
 
 
