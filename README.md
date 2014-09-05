@@ -7,10 +7,12 @@ Below is a simple scenerio depicting 2 devices connecting and then joining a Gro
 
 ![Join](/Scenarios/1.png)
 
+Before venturing further, some basic definitions first 
+
 ##### Groups
 Equivalent of rooms or channels in standard pubsub terminology. A Group can contain a mixture of Posts and Users. Once subscribed to a Group using the _join_ or _listen_ method, a User is pushed Users and Posts packets through the socketReceivedDict delegate method.
 
-###### Users
+##### Users
 When connected to Lompang backend for the first time, a device will be allocated a unique identifier _user_ that identifies a User by device and app. This unique identifier stays unchanged across sessions, even after an uninstall. Below code snippet shows a sample User package that is sent to the socketReceivedDict delegate method. _group_ refers to the Group from which the User package is pushed from. _timestamp_ refers to the Unix timestamp in milliseconds the User was last seen in the Group. _timestamp= 0_ indicates User is currently online. _userload_ is the custom payload that is attached to the User.
 
 ```
@@ -26,7 +28,7 @@ When connected to Lompang backend for the first time, a device will be allocated
 }
 ```
 
-###### Posts
+##### Posts
 A User can post a message to a Group via the _post_ method. Below code snippet shows a sample Post package that is sent to the socketReceivedDict delegate method. _group_ is the Group that User posted the Post to. _pid_ is the custom identifier a developer uses to uniquely identify the Post. _pidload_ is the custom payload attached to the message. _timestamp_ is the Unix timetamp in milliseconds when User posted the Post. _user_ is the User that posted the Post.  
 
 ```
