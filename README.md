@@ -10,6 +10,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 Equivalent of 'Rooms' or 'Channels' in standard pubsub terminology. A 'Group' can contain a mixture of 'Posts' and 'Users'. When a 'User' connects to a 'Group', all 'Users' and 'Posts' residing in the 'Group' will be pushed to 'User' via the socketReceivedDict delegate method.
 
 ###### Users
+Equivalent of a client in standard pubsub terminology. When an iPhone connects to Lompang backend, it is allocated a unique identification string that will not 
 
 ###### Posts
 
