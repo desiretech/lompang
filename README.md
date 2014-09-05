@@ -5,7 +5,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 Below is a simple scenerio depicting 2 devices connecting and then joining a Group A. Presence of User A and B are automatically broadcasted everyone in the group. More scenarios illustrated [below](#morescenarios).
 
-![Join](/Scenarios/1.png)
+![Join](/images/1.png)
 
 ### DEFINITIONS
 Before venturing further, some basic definitions first need to be established first. 
@@ -49,16 +49,16 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
 ### SCENARIOS <a name="morescenarios"></a>
 
 Below illustrates the _listen_ method. Note that User B is unaware of User A's presence in the group. Compare this with the previous scenario.
-![Listen](/Scenarios/2.png)
+![Listen](/images/2.png)
 
 Disconnect events are also broadcasted to members in the Group. In the below case at Stage 4, User B is somehow disconnected. This change in presence is broadcasted to User A. Note that _timestamp_ of User B has changed from 0 in Stage3 to 1409876031645 in Stage 5. _Timestamp= 0_ indicates User B was online at Stage 3. _Timestamp= 1409876031645_ indicates User B was last seen at Sep5, 2014, 12:13:51am UTC.
-![Disconnect](/Scenarios/3.png)
+![Disconnect](/images/3.png)
 
 Method _update_ changes the userload attached to User B. This change is then broadcasted to all Groups that User B has _join_-ed.
-![](/Scenarios/4.png)
+![](/images/4.png)
 
 User A _posts_ a message with custom payload _pidload_ to Group A. Post is then broadcasted to everyone in Group A. Upon receipt, a developer is expected to manually issue out a _unpost_ command to remove the post. Otherwise Post A will continue to be dispatched out to Users entering the Group.
-![](/Scenarios/5.png)
+![](/images/5.png)
 
 #### INSTRUCTIONS
 * Generate APNS certificate from Apple
