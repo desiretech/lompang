@@ -60,7 +60,7 @@ Method _update_ changes the userload attached to User B. This change is then bro
 User A _posts_ a message with custom payload _pidload_ to Group A. Post is then broadcasted to everyone in Group A. Upon receipt, a developer is expected to issue out a _unpost_ command to remove the post. Otherwise Post A will continue to be dispatched out to all Users entering the Group.
 ![](/images/5.png)
 
-#### INSTRUCTIONS
+### INSTRUCTIONS
 * Generate APNS certificate from Apple
 * Make sure certificate is
  * .p12 extension
