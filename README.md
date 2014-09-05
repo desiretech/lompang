@@ -5,7 +5,7 @@ This repository contains the API that powers the iOS carpooling app, [Lompang](h
 
 Below is a simple scenerio depicting 2 devices connecting and then joining a Group A. Presence of User A and B are automatically broadcasted everyone in the group. More scenarios illustrated [below](#morescenarios).
 
-![](/Scenarios/1.png)
+![Join](/Scenarios/1.png)
 
 ### DEFINITIONS
 Before venturing further, some basic definitions first need to be established first. 
@@ -48,10 +48,11 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
 
 #### SCENARIOS <a name="morescenarios"></a>
 
-![Join](/Scenarios/2.png)
-![Join](/Scenarios/3.png)
-![Join](/Scenarios/4.png)
-![Join](/Scenarios/5.png)
+Below scenario illustrates the listen method. Note that User B is unaware of presence of User A in the group. Compare this with the above scenario.
+![Listen](/Scenarios/2.png)
+![](/Scenarios/3.png)
+![](/Scenarios/4.png)
+![](/Scenarios/5.png)
 
 #### INSTRUCTIONS
 * Generate APNS certificate from Apple
