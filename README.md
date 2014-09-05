@@ -8,7 +8,7 @@ Below scenerio depicts 2 devices connecting and then joining Group A. Presence o
 ![Join](/images/1.png)
 
 ### DEFINITIONS
-Before venturing further, some basic definitions first need to be established first. 
+Before venturing further, some basic definitions need to be established first. 
 
 ###### Groups
 Equivalent of rooms or channels in standard pubsub terminology. A Group can contain a mixture of Posts and Users. Once a User is subscribed to a Group using the _join_ or _listen_ method, Users and Posts packets are pushed through the socketReceivedDict delegate method.
