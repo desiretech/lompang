@@ -48,7 +48,7 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
 
 #### SCENARIOS <a name="morescenarios"></a>
 
-Below illustrates the listen method. Note that User B is unaware of presence of User A in the group. Compare this with the previous scenario.
+Below illustrates the listen method. Note that User B is unaware of User A's presence in the group. Compare this with the previous scenario.
 ![Listen](/Scenarios/2.png)
 ![](/Scenarios/3.png)
 ![](/Scenarios/4.png)
