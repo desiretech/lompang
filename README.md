@@ -42,6 +42,8 @@ A User can post a message to a Group via the _post_ method. Below code snippet s
 }
 ```
 
+#### SCENARIOS
+
 ![Join](http://lompang.com/images/sdkjoin.png)
 ![Join](http://lompang.com/images/sdklisten.png)
 ![Join](http://lompang.com/images/sdkpost.png)
