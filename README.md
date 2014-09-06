@@ -104,4 +104,4 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
     * Under didRegisterForRemoteNotificationsWithDeviceToken, add
         * ```[self.lompang registerApns:deviceToken];```
 * Under socketRegistered, start making the calls out to Lompang SDK.
-* [For more information, please refer here.](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
+* [Please refer here for a list of all supported methods.](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
