@@ -82,7 +82,7 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 <br/>
 ![Add Files](/images/addfiles.png)
 * In AppDelegate.h
-```#import "Lompang.h"```
-```@class Lompang;```
-```@property (strong, nonatomic) Lompang *lompang;```
+ * ```#import "Lompang.h"```
+ * ```@class Lompang;```
+ * ```@property (strong, nonatomic) Lompang *lompang;```
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
