@@ -102,5 +102,6 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
     * Add the following APNS delegate method
         * ```-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;```
     * Under didRegisterForRemoteNotificationsWithDeviceToken, add
-        * ```[self.lompang registerApns:deviceToken];``` 
-* Reference [AppDelegate.h](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
+        * ```[self.lompang registerApns:deviceToken];```
+* Under socketRegistered, start making the calls out to Lompang SDK.
+* [For more information, please refer here.](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
