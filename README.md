@@ -73,10 +73,12 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 * Download the 3 files from Lompang folder
  * Lompang.h, libLompang.a, lompang.mom
 * Drag and drop the 3 files to Folder Group, Frameworks
- * When prompted, ensure Copy items into destination group's folder is not selected  
+ * When prompted, select "Copy items into destination group's folder"  
 * Link CoreData and SystemConfiguration, Foundation, CoreGraphics and UIKit libraries to your binary
 <br/>
 ![Add Files](/images/addfiles.png)
 * Change the architecture of app to armv7
+<br/>
+![Add Files](/images/changeArchitecture.png)
 
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
