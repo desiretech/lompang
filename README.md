@@ -81,6 +81,6 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 * Change the architecture of app to armv7
 <br/>
 ![Add Files](/images/changeArchitecture.png)
-* And you are ready to go!
+* And we are ready to go into coding!
 
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
