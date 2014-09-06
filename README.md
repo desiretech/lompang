@@ -88,7 +88,7 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 * In AppDelegate.m
  * Under didFinishLaunchingWithOptions
   * ```self.lompang= [[Lompang alloc] init];```
-  * ``` self.lompang.delegate= self; ```
-  * ``` [self.lompang connectToAccount:@"<YOUR_EMAIL>" WithToken:@"<YOUR_TOKEN>"];``` 
+  * ```self.lompang.delegate= self; ```
+  * ```[self.lompang connectToAccount:@"<YOUR_EMAIL>" WithToken:@"<YOUR_TOKEN>"];``` 
 
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
