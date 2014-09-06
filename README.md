@@ -77,10 +77,9 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 * Link CoreData and SystemConfiguration, Foundation, CoreGraphics and UIKit libraries to your binary
 <br/>
 ![Add Files](/images/addfiles.png)
-
 * Change the architecture of app to armv7
 <br/>
 ![Add Files](/images/changeArchitecture.png)
+* And you are ready to go!
 
-* sadasd
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
