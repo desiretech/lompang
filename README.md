@@ -71,12 +71,12 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 * Follow instructions from email and you should receive your token key
 * Please keep your token key. You will need to add it to your codes later
 * Create a new xCode project
-* Change the architecture of app to armv7
+* Change the architecture to armv7
 <br/>
 ![Add Files](/images/changeArchitecture.png)
 * Download the 3 files from [Lompang folder](https://github.com/ngzhongcai/lompang/tree/master/Lompang) in Github
  * Lompang.h, libLompang.a, lompang.mom
-* Create a new xCode project. Drag and drop the 3 files under Frameworks folder group
+* Drag and drop the 3 files under Frameworks folder group
  * When prompted, select "Copy items into destination group's folder"  
 * Link CoreData and SystemConfiguration, Foundation, CoreGraphics and UIKit libraries to your binary
 <br/>
