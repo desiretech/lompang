@@ -90,11 +90,18 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
         * ```self.lompang= [[Lompang alloc] init];```
         * ```self.lompang.delegate= self; ```
         * ```[self.lompang connectToAccount:@"<YOUR_EMAIL>" WithToken:@"<YOUR_TOKEN>"];``` 
-    * Add the following delegate method
-        * -(void)socketConnected:(NSDictionary *)dict
-            * ``` -(void)socketConnected:(NSDictionary *)dict {
-    NSLog(@"@@@ socketConnected: %@", dict);
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
-}
-            * ```
+    * Add the following delegate methods
+        * -(void)socketConnected:(NSDictionary *)dict;
+        * -(void)socketDisconnected;
+        * -(void)socketReceivedErr:(NSDictionary *)dict;
+        * -(void)socketRegistered:(NSDictionary *)dict;
+        * -(void)socketUnregistered;
+        * -(void)socketReceivedDict:(NSDictionary *)dict;
+    * Under socketConnected, register for APNS push notifications
+        * [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
+    * Add the following APNS delegate method
+        * -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+    * Under didRegisterForRemoteNotificationsWithDeviceToken, add
+        * [self.lompang registerApns:deviceToken]; 
+    
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
