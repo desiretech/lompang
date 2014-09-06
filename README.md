@@ -61,7 +61,9 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 ![](/images/5.png)
 
 ### INSTRUCTIONS
-* Generate APNS certificate from Apple. Make sure certificate is in .p12 extension and is NOT password protected. Not sure how? [Instructions with screenshots here](https://github.com/ngzhongcai/lompang/wiki/Generate-Certificates)
+* Generate APNS certificate from Apple.
+ * Make sure certificate is in .p12 extension and is NOT password protected.
+ * Not sure how? [Instructions with screenshots here](https://github.com/ngzhongcai/lompang/wiki/Generate-Certificates)
 * Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)
  * Key in your email address
  * Upload your .p12 APNS cert that is NOT password protected
