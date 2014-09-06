@@ -55,10 +55,10 @@ Disconnect events are also broadcasted to Users in the Group. Illustrated below,
 ![Disconnect](/images/3.png)
 
 Method _update_ changes the userload attached to User B. This change is then broadcasted to **all** Groups that User B has _join_-ed.
-![](/images/4.png)
+![Update](/images/4.png)
 
 User A _posts_ a message with custom payload _pidload_ to Group A. Post is then broadcasted to everyone in Group A. Upon receipt, a developer is expected to issue out a _unpost_ command to remove the post. Otherwise Post A will continue to be dispatched out to all Users entering the Group.
-![](/images/5.png)
+![Post](/images/5.png)
 
 ### INSTRUCTIONS
 * Generate APNS certificate from Apple.
@@ -66,13 +66,16 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
  * Not sure how? [Here for detailed instructions.](https://github.com/ngzhongcai/lompang/wiki/Generate-Certificates)
 * Go to [lompang.com/sdk.html](http://lompang.com/sdk.html)
  * Key in your email address
- * Upload your .p12 APNS cert that is NOT password protected
+ * Upload your **.p12 APNS cert that is NOT password protected**
  * Indicate type of certificate, whether it is Sandbox or Production
 * Follow instructions from email and you should receive your token key
 * Please keep your token key. You will need to add it to your codes later
 * Download the 3 files from Lompang folder
-* Add the 3 files to Folder Group, Frameworks
-* Change the architecture of app to armv7
+ * Lompang.h, libLompang.a, lompang.mom
+* Drag and drop the 3 files to Folder Group, Frameworks
+ * When prompted, ensure Copy items into destination group's folder is not selected  
 * Link CoreData and SystemConfiguration libraries to your binary
+![Add Files](/images/addfiles.png)
+* Change the architecture of app to armv7
 
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
