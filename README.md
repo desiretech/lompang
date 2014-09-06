@@ -86,9 +86,15 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
  * ```@class Lompang;```
  * ```@property (strong, nonatomic) Lompang *lompang;```
 * In AppDelegate.m
-    * Under didFinishLaunchingWithOptions
+    * Under didFinishLaunchingWithOptions, add the following lines
         * ```self.lompang= [[Lompang alloc] init];```
         * ```self.lompang.delegate= self; ```
         * ```[self.lompang connectToAccount:@"<YOUR_EMAIL>" WithToken:@"<YOUR_TOKEN>"];``` 
-
+    * Add the following delegate method
+        * -(void)socketConnected:(NSDictionary *)dict
+            * ``` -(void)socketConnected:(NSDictionary *)dict {
+    NSLog(@"@@@ socketConnected: %@", dict);
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
+}
+            * ```
 [Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
