@@ -70,6 +70,7 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
  * Indicate type of certificate, whether it is Sandbox or Production
 * Follow instructions from email and you should receive your token key
 * Please keep your token key. You will need to add it to your codes later
+* Create a new xCode project 
 * Download the 3 files from Lompang folder
  * Lompang.h, libLompang.a, lompang.mom
 * Drag and drop the 3 files to Folder Group, Frameworks
