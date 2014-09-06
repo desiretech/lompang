@@ -81,11 +81,11 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
 * Link CoreData and SystemConfiguration, Foundation, CoreGraphics and UIKit libraries to your binary
 <br/>
 ![Add Files](/images/addfiles.png)
-* In AppDelegate.h
+* In [AppDelegate.h](https://github.com/ngzhongcai/lompang/blob/master/saas/AppDelegate.h)
  * ```#import "Lompang.h"```
  * ```@class Lompang;```
  * ```@property (strong, nonatomic) Lompang *lompang;```
-* In AppDelegate.m
+* In [AppDelegate.m](https://github.com/ngzhongcai/lompang/blob/master/saas/AppDelegate.m)
     * Under didFinishLaunchingWithOptions, add the following lines
         * ```self.lompang= [[Lompang alloc] init];```
         * ```self.lompang.delegate= self; ```
@@ -103,5 +103,4 @@ User A _posts_ a message with custom payload _pidload_ to Group A. Post is then 
         * ```-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;```
     * Under didRegisterForRemoteNotificationsWithDeviceToken, add
         * ```[self.lompang registerApns:deviceToken];``` 
-    
-[Click here for more information on the individual methods](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
+* Reference [AppDelegate.h](https://github.com/ngzhongcai/lompang/blob/master/Lompang/Lompang.h)
